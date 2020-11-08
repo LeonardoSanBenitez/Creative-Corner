@@ -1,0 +1,22 @@
+# AI
+tensorflow==2.3.0 # tensorflow==2.0.0
+Keras==2.3.1 # Keras==2.3.0
+keras_tqdm==2.0.1
+mrcnn==0.2
+
+matplotlib==3.1.1
+numpy==1.17.2
+opencv-python==3.4.2.17
+pandas==0.25.1
+python-dotenv==0.10.3
+
+# Unmet dependencies of mrcnn
+cython
+h5py
+scikit-image
+IPython
+
+# Web app
+Flask==1.1.1
+requests==2.22.0
+Pillow==6.2.0 
