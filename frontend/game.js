@@ -1,3 +1,20 @@
+var name;
+var age;
+function submitCallback() {
+
+    name = document.getElementById("inputName3").value
+    age = document.getElementById("inputAge3").value
+
+    document.getElementById("initial-form").style.display = 'None'
+    document.getElementById("thegame").style.display = 'block'
+}
+
+
+
+
+
+/* ***************** */
+
 var game;
 
 var gameOptions = {
@@ -430,6 +447,11 @@ class playGame extends Phaser.Scene{
     }
 
     update(t, dt){
+        this.add.text(200, 200, 'Hello, '.concat(name), {
+            fontFamily: "Arial",
+            fontSize: 80,
+            color: "#FF8800"
+        });
 
         // if wheels aren't colliding...
         if(!this.wheelsColliding){
